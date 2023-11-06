@@ -1,4 +1,4 @@
-import { AEntity, BEntity } from 'bryant-se-pico/entities';
+import { AEntity, BEntity } from 'jest-test/entities';
 
 // Codigo para simular pruebas
 export class StoreManager {

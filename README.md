@@ -10,10 +10,10 @@ mostrar un error que ocurre al intentar implementar pruebas usando Jest en un bu
 
 Dada la explicacion general aqui el detalle:
 
-En el archivo `bryant-se-pico/modules/home/ts/store.ts` pertenciente al bundle `Home` se define una clase con un metodo
-`load`, `initA` e `initB` mas alla de la funcionalidad que tengan estos metodos lo importante es que en el archivo se
-usa como dependencia `AEntity` y `BEntity` pertenecientes a otro bundle el bundle entities cuya ubicacion es:
-`bryant-se-pico\modules\a\ts\a.ts`
+En el archivo `project/modules/home/ts/store.ts` pertenciente al bundle `Home` se define una clase con un metodo `load`,
+`initA` e `initB` mas alla de la funcionalidad que tengan estos metodos lo importante es que en el archivo se usa como
+dependencia `AEntity` y `BEntity` pertenecientes a otro bundle el bundle entities cuya ubicacion es:
+`project\modules\a\ts\a.ts`
 
 A la hora de ejecutar las pruebas (Usando npm test dentro de la carpeta bryant-se-pico) este genera un error no comun
 generado por Jest el cual da a enteder de que la importacion de `AEntity` y `BEntity` no pudo ser trackeada porque no se
@@ -38,7 +38,7 @@ git clone <url del repositorio>
 Luego, navega hasta el directorio del proyecto:
 
 ```bash
-cd <nombre del directorio del proyecto>
+cd project
 ```
 
 Instala las dependencias del proyecto con npm:
@@ -52,7 +52,7 @@ npm install
 Para ejecutar las pruebas, primero debes navegar hasta el directorio del paquete que deseas probar:
 
 ```bash
-cd <ruta del paquete>
+cd project
 ```
 
 Luego, puedes ejecutar las pruebas con el siguiente comando:
