@@ -15,9 +15,9 @@ En el archivo `project/modules/home/ts/store.ts` pertenciente al bundle `Home` s
 dependencia `AEntity` y `BEntity` pertenecientes a otro bundle el bundle entities cuya ubicacion es:
 `project\modules\a\ts\a.ts`
 
-A la hora de ejecutar las pruebas (Usando npm test dentro de la carpeta bryant-se-pico) este genera un error no comun
-generado por Jest el cual da a enteder de que la importacion de `AEntity` y `BEntity` no pudo ser trackeada porque no se
-encontro la ruta a la cual estos archivos pertenecen
+A la hora de ejecutar las pruebas (Usando npm test dentro de la carpeta project) este genera un error no comun generado
+por Jest el cual da a enteder de que la importacion de `AEntity` y `BEntity` no pudo ser trackeada porque no se encontro
+la ruta a la cual estos archivos pertenecen
 
 Esto es una calle ciega porque Beyond maneja la importacion de componentes de otros bundles de una manera en especifo
 que no es la misma que usa Jest para trackear las dependencias
